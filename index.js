@@ -1,8 +1,8 @@
 const time = new Date();
-const timeHour = time.getHours();
+/* const timeHour = time.getHours();
 const timeMin = time.getMinutes();
-const timeSec = time.getSeconds();
-const realTime = `${timeHour}:${timeMin}:${timeSec}`;
+const timeSec = time.getSeconds(); */
+const realTime = time.getUTCMilliseconds();
 const pTime = document.getElementById("time");
 let timeMsg = `Current UTC time is: ${realTime}`;
 pTime.innerHTML = timeMsg;
