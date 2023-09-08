@@ -4,7 +4,7 @@ const timeMin = time.getMinutes();
 const timeSec = time.getSeconds(); */
 const realTime = time.getUTCMilliseconds();
 const pTime = document.getElementById("time");
-let timeMsg = `Current UTC time is: ${realTime}`;
+let timeMsg = `Current UTC time is: ${realTime}ms`;
 pTime.innerHTML = timeMsg;
 
 const weekday = [
